@@ -6,7 +6,8 @@ class PostsPresenter {
         const vm = response.map(item => {
             return {
                 id: item.id,
-                title: item.title
+                title: item.title,
+                done: item.done
             }
         })
         return vm;

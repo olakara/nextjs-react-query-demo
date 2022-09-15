@@ -1,4 +1,5 @@
 import { useQuery,useMutation } from "@tanstack/react-query";
+import PostsListerComponent from "./posts-lister.component";
 import postsPresenter from "./posts.presenter";
 
 function PostsComponent() {  
@@ -33,12 +34,7 @@ function PostsComponent() {
   return (
     <>
       This is post component!
-      <ul>
-        {posts &&
-          posts.map((post) => {
-            return <li key={post.id}>{post.title}</li>;
-          })}
-      </ul>
+      <PostsListerComponent posts={posts}></PostsListerComponent>
       <button onClick={handleClick}>AddPost</button>
       <button onClick={() => refetch()}>Fetch Todos</button>
     </>
