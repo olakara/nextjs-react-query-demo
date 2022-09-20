@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import PostsComponent from '../components/posts/posts.component'
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
 import HeaderComponent from '../components/header/header.component'
